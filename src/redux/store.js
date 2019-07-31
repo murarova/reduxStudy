@@ -1,10 +1,9 @@
 import { combineReducers, createStore } from "redux";
 import { devToolsEnhancer } from "redux-devtools-extension";
-
-const timerReduser = () => {};
+import timerReduser from "../redux/timerReduser";
 
 const rootReducer = combineReducers({
-	timer: timerReduser
+  timer: timerReduser
 });
 
 const store = createStore(rootReducer, devToolsEnhancer());
